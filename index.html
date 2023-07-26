@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic routing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+
+  <body class ="bg-dark text-light">
+
+    <nav class="navbar navbar-expand navbar-dark bg-primary">
+      <a class="navbar-brand" href="#Home"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#Home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pagelist">PageList</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pagedetail">Pagedetail</a>
+          </li>
+        </ul>
+        <form>
+          <input type="text" placeholder="Find a game">
+          <button type="submit" id="search" class="btn btn-warning">Search</button>
+        </form>
+        </div>
+        
+        </nav>
+        <div class="container">
+            
+            <section id="pageContent">Choisissez un lien</section>
+        </div>
+
+    <script src="js/Home.js"></script>
+    <script src="js/PageList.js"></script>
+    <script src="js/PageDetail.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
