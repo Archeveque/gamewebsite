@@ -10,16 +10,16 @@ const PageDetail = (argument) => {
         articleDOM.querySelector("p.dev").innerHTML += dev.name+ " | ";
       });
       articleDOM.querySelector("p.release-date span").innerHTML = released;
-      articleDOM.querySelector("p.metacritic").innerHTML = metacritic;
-      articleDOM.querySelector("p.description").innerHTML = description;
+      articleDOM.querySelector("p.metacritic span").innerHTML = metacritic;
+      articleDOM.querySelector("p.description ").innerHTML = description;
       tags.forEach(tag => {
-        articleDOM.querySelector("p.tags").innerHTML += tag.name+ " | ";
+        articleDOM.querySelector("p.tags span").innerHTML += tag.name+ " | ";
       });
       genres.forEach(genre => {
-        articleDOM.querySelector("p.genre").innerHTML += genre.name+ " | ";
+        articleDOM.querySelector("p.genre span").innerHTML += genre.name+ " | ";
       });
       platforms.forEach(platform => {
-        articleDOM.querySelector("p.platforms").innerHTML += platform.platform.name+ " | ";
+        articleDOM.querySelector("p.platforms span").innerHTML += platform.platform.name+ " | ";
       });
       articleDOM.querySelector("img.poster").src = background_image;
       articleDOM.querySelector("button.website").setAttribute("onclick",("location.href=\'"+website+"\'"));
@@ -45,10 +45,10 @@ const PageDetail = (argument) => {
           <h1 class="title"></h1>
           <p class= "dev"></p>
           <p class="release-date">Release date : <span></span></p>
-            <p class="metacritic bg-success"></p>
-            <p class= "genre"</p>
-            <p class= "tags"</p>
-            <p class= "platforms"></p>
+            <p class="metacritic"> Metacritic :<span class = " bg-success"></span></p>
+            <p class= "genre"> genre : <span></span> </p>
+            <p class= "tags"> tags : <span></span> </p>
+            <p class= "platforms">platforms : <span></span> </p>
           <p class="description"></p>
           <button onclick="" type="button" class="website btn btn-primary">Official website</button>
         </div>
